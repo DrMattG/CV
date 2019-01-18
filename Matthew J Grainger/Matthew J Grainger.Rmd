@@ -1,0 +1,67 @@
+---
+name: Matthew J Grainger
+position: "Post-Doctorial Fellow"
+address: "Norwegian Institute for Nature Research"
+phone: 
+www: uncertainecologist.netlify.com
+email: "Matthew.Grainger@nina.no"
+twitter: Ed_pheasant
+github: DrMattG
+aboutme: Wildlife, Uncertainty, Evidence synthesis, Decision models
+linkedin: 
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(RefManageR)
+library(vitae)
+library(scholar)
+source("C:/Users/matthew.grainger/Documents/Employment_Docs/Markdown_CV/Robjhyndman_Baretable.R")
+```
+
+
+# Education and qualifications
+
+```{r degrees, results='asis'}
+edu <- rorcid::orcid_educations("0000-0001-8426-6495")
+
+edu$`0000-0001-8426-6495`$`education-summary` %>% 
+  
+  mutate(`end-date.year.value` = replace_na(`end-date.year.value`, "2019")) %>% 
+  
+  detailed_entries(
+    
+    what = `role-title`,
+    
+    when = glue::glue("{`start-date.year.value`}--{`end-date.year.value`}"), 
+    
+    with = organization.name,
+    
+    where = organization.address.city
+    
+  )
+
+```
+
+# Publications
+
+```{r}
+scholar::get_publications("aZ4E5I4AAAAJ&hl") %>%
+
+  arrange(desc(year)) %>%
+
+  detailed_entries(
+
+    what = title,
+
+    when = year,
+
+    with = author,
+
+    where = journal
+
+  )
+```
