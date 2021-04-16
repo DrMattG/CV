@@ -8,7 +8,6 @@ email: "matthew.grainger@nina.no"
 twitter: Ed_pheasant
 github: DrMattG
 aboutme: Wildlife, Uncertainty, Evidence Synthesis, Decision Models
-linkedin: www.linkedin.com/in/matthew-grainger-49880a36
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::moderncv
 ---
@@ -54,7 +53,7 @@ tribble(
   
   ~Start, ~End, ~Position,
   
-  2005, 2006, "\\textbf{ Research Co-ordinator}, Frontier Tanzania",
+  2005, 2006, "\\textbf{ Research Co-ordinator}, Frontier-Tanzania, Tanzania",
   
   2011, 2012, "\\textbf{ Conservation Research and Support Officer}, World Pheasant Ass., Newcastle, UK",
   

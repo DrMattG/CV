@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.12)  16 APR 2021 18:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.12)  16 APR 2021 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,15 +674,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `DejaVuSansMono-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 144.
-
-(c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawe
-some5/ufontawesomebrands0.fd)
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
-available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 144.
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
  input line 144.
 
@@ -692,10 +683,19 @@ LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <10> not
 available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
 n input line 144.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
+ input line 144.
+
+(c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawe
+some5/ufontawesomebrands0.fd)
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
+available
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
+n input line 144.
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 81.60002pt, for example:
-(fancyhdr)                \setlength{\footskip}{81.60002pt}.
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [1
 
@@ -726,48 +726,48 @@ l.156 \leavevmode\hypertarget{ref-R-sysrevdata}{}
                                                  %
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 81.60002pt, for example:
-(fancyhdr)                \setlength{\footskip}{81.60002pt}.
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [2]
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 81.60002pt, for example:
-(fancyhdr)                \setlength{\footskip}{81.60002pt}.
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [3]
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 81.60002pt, for example:
-(fancyhdr)                \setlength{\footskip}{81.60002pt}.
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [4]
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 81.60002pt, for example:
-(fancyhdr)                \setlength{\footskip}{81.60002pt}.
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [5]
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
-(fancyhdr)                Make it at least 81.60002pt, for example:
-(fancyhdr)                \setlength{\footskip}{81.60002pt}.
+(fancyhdr)                Make it at least 68.00002pt, for example:
+(fancyhdr)                \setlength{\footskip}{68.00002pt}.
 
 [6] (./modernCvMatt.aux)
 Package rerunfilecheck Info: File `modernCvMatt.out' has not changed.
 (rerunfilecheck)             Checksum: 14B1615E3F46C21F152776DB432F0C26;686.
  ) 
 Here is how much of TeX's memory you used:
- 14880 strings out of 480954
- 255320 string characters out of 5905582
- 571816 words of memory out of 5000000
- 31659 multiletter control sequences out of 15000+600000
+ 14877 strings out of 480954
+ 255240 string characters out of 5905582
+ 570688 words of memory out of 5000000
+ 31656 multiletter control sequences out of 15000+600000
  465601 words of font info for 148 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,13n,89p,434b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips
-/fontawesome5/fa5brands1.enc}{c:/Users/matthew.grainger/AppData/Roaming/TinyTeX
-/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{c:/Users/matthew.grain
+/fontawesome5/fa5brands0.enc}{c:/Users/matthew.grainger/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands1.enc}{c:/Users/matthew.grain
 ger/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-typ
 e1.enc}{c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/
 dvips/fontawesome5/fa5free1.enc}{c:/Users/matthew.grainger/AppData/Roaming/Tiny
@@ -789,10 +789,10 @@ a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/Users/matthew
 .grainger/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro12.pfb><
 c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public
 /lm/lmro17.pfb>
-Output written on modernCvMatt.pdf (6 pages, 294286 bytes).
+Output written on modernCvMatt.pdf (6 pages, 293137 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
+ 191 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
  33329 words of extra memory for PDF output out of 35830 (max. 10000000)
 
