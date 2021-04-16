@@ -1,0 +1,125 @@
+---
+name: Matthew J Grainger
+position: "Researcher"
+address: "Norwegian Institute for Nature Research"
+phone: 47 413 64 729
+www: uncertainecologist.netlify.com
+email: "matthew.grainger@nina.no"
+twitter: Ed_pheasant
+github: DrMattG
+aboutme: Wildlife, Uncertainty, Evidence Synthesis, Decision Models
+linkedin: www.linkedin.com/in/matthew-grainger-49880a36
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(RefManageR)
+library(scholar)
+source("C:/Users/matthew.grainger/Documents/Employment_Docs/Markdown_CV/Robjhyndman_Baretable.R")
+```
+
+# About me
+
+I am an ecologist, with research interests in how we use knowledge to better inform decision making in species conservation (i.e. "Evidence-based decision making"). I develop opensource tools (in R and Shiny) that help people gather information robustly in a transparent way, interact with that information and make inference from it.
+
+I am currently working on several projects that are fundamentally about how we make open research approaches (i.e. sharing data, sharing code, sharing best practice) as an integrated part of the workflow for biodiversity researchers and how we can take this open research and use it to help decision-makers find optimal solutions.
+
+# Education
+
+```{r}
+tribble(
+
+  ~ degree, ~ uni, ~ loc, ~ dates,
+
+  "BSc (Hons) in Zoology", "Newcastle University", "UK", "1994 - 1997",
+
+  "MSc in Conservation & planning", "University of Pretoria", "South Africa", "2004 - 2005", 
+
+  "PhD Zoology", "University of Pretoria", "South Africa", "2008 - 2012" 
+) %>% 
+
+  detailed_entries(degree, dates, uni, loc)
+```
+
+# Employment history
+
+
+```{r employment, results='asis'}
+
+tribble(
+  
+  ~Start, ~End, ~Position,
+  
+  2005, 2006, "\\textbf{ Research Co-ordinator}, Frontier Tanzania",
+  
+  2011, 2012, "\\textbf{ Conservation Research and Support Officer}, World Pheasant Ass., Newcastle, UK",
+  
+  2013, 2014, "\\textbf{ Postdoctoral Research Associate-Research Impact}, Newcastle University, UK",
+  
+  2014, 2019, "\\textbf{ Postdoctoral Research Associate}, Newcastle University, UK",
+  
+  2019, 2021, "\\textbf{ Postdoctoral Fellow}, NINA, Trondheim, Norway",
+  2021, NA , "\\textbf{ Researcher}, NINA, Trondheim, Norway"
+  
+) %>%
+  
+  arrange(-Start) %>%
+  
+  #filter(Start > 2000) %>%
+  
+  mutate(End = replace_na(End, "")) %>%
+  
+  mutate(Years = paste(Start, "--", End, sep = "")) %>%
+  
+  select(Years, Position) %>%
+  
+  baretable()
+
+```
+
+
+
+# R packages
+
+```{r}
+library(dplyr)
+#knitr::write_bib(c("citationchaser", "sysrevdata"), "MattRpacks.bib")
+
+bibliography_entries("MattRpacks.bib") %>%
+  arrange(desc(author$family), issued)
+```
+# R packages in development
+
+```{r}
+library(dplyr)
+#knitr::write_bib(c("citationchaser", "sysrevdata"), "MattRpacks.bib")
+
+bibliography_entries("MattRpacks.bib") %>%
+  arrange(desc(author$family), issued)
+```
+
+
+# Publications
+
+```{r}
+scholar::get_publications("aZ4E5I4AAAAJ&hl") %>%
+
+  arrange(desc(year)) %>%
+
+  detailed_entries(
+
+    what = title,
+
+    when = year,
+
+    with = author,
+
+    where = journal
+
+  )
+```
+
