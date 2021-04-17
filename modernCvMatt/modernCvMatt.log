@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.12)  16 APR 2021 19:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.12)  17 APR 2021 07:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,30 +700,7 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 [1
 
 {c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/u
-pdmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (
-name{bibliography}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146 \hypertarget{bibliography}{}
-                                  pdfTeX warning (ext4): destination with the s
-ame identifier (name{ref-R-citationchaser}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.147 ...vmode\hypertarget{ref-R-citationchaser}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-R-eviatlas}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.151 \leavevmode\hypertarget{ref-R-eviatlas}{}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{ref-R-sysrevdata}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.156 \leavevmode\hypertarget{ref-R-sysrevdata}{}
-                                                 %
+pdmap/pdftex.map}]
 
 Package fancyhdr Warning: \footskip is too small (60.0pt): 
 (fancyhdr)                Make it at least 68.00002pt, for example:
@@ -755,13 +732,13 @@ Package fancyhdr Warning: \footskip is too small (60.0pt):
 
 [6] (./modernCvMatt.aux)
 Package rerunfilecheck Info: File `modernCvMatt.out' has not changed.
-(rerunfilecheck)             Checksum: 14B1615E3F46C21F152776DB432F0C26;686.
+(rerunfilecheck)             Checksum: B9312B3DB4385E6722901A2413B0FE4A;509.
  ) 
 Here is how much of TeX's memory you used:
- 14877 strings out of 480954
- 255240 string characters out of 5905582
- 570688 words of memory out of 5000000
- 31656 multiletter control sequences out of 15000+600000
+ 14873 strings out of 480954
+ 255166 string characters out of 5905582
+ 570665 words of memory out of 5000000
+ 31654 multiletter control sequences out of 15000+600000
  465601 words of font info for 148 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,13n,89p,434b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -789,10 +766,10 @@ a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/Users/matthew
 .grainger/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro12.pfb><
 c:/Users/matthew.grainger/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public
 /lm/lmro17.pfb>
-Output written on modernCvMatt.pdf (6 pages, 293137 bytes).
+Output written on modernCvMatt.pdf (6 pages, 292594 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 33329 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 33321 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -91,16 +91,6 @@ library(dplyr)
 bibliography_entries("MattRpacks.bib") %>%
   arrange(desc(author$family), issued)
 ```
-# R packages in development
-
-```{r}
-library(dplyr)
-#knitr::write_bib(c("citationchaser", "sysrevdata"), "MattRpacks.bib")
-
-bibliography_entries("MattRpacks.bib") %>%
-  arrange(desc(author$family), issued)
-```
-
 
 # Publications
 
