@@ -8,14 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## My CV
-This repository contains my curriculum vitae developed using the excellent vitae package in RMarkdown. 
+This repository contains my curriculum vitae developed using Quarto.
 
-```{r vitae, echo=TRUE}
-citation("vitae")
-```
+Here is a version of my CV:
 
-The package has a number of different templates that you can use to develop your cv (https://github.com/mitchelloharawild/vitae). My current favourite is the "moderncv" template. This is the one I have decided to use. I have experimented with the "awesomecv", which is as the name suggests awesome! It is probably a little too awesome for me though - I like the colour and layout but I need to adjust the colour of the titles to be either one letter or the whole word (three letters looks odd). 
-
-Here is a version of my CV in the moderncv template:
-
-https://docs.google.com/viewer?url=https://github.com/DrMattG/CV/raw/master/modernCvMatt/modernCvMatt.pdf
+https://docs.google.com/viewer?url=https://github.com/DrMattG/CV/raw/master/Matt_CV_new.pdf
