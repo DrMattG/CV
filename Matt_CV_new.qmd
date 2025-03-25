@@ -1,0 +1,74 @@
+---
+title: "Dr Matthew Grainger"
+author: "Researcher I"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+fontsize: 11pt
+geometry: margin=1in
+format:
+  pdf:
+    include-in-header: |
+      \usepackage{titlesec}
+      \titleformat{\section}{\large\bfseries}{}{0em}{}{}
+---
+# Contact Information
+- **Email:** [matthew.grainger@nina.no](mailto:matthew.grainger@nina.no)
+- **Website:** [Uncertain_Ecologist](https://drmattg.github.io/Uncertain_Ecologist/) 
+- **GitHub:** [DrMattG](https://github.com/DrMattG/)
+- **ORCID:** [0000-0001-8426-6495](https://orcid.org/0000-0001-8426-6495)  
+
+# Education
+**Ph.D. Zoology**, University of Pretoria, 2011  
+Thesis Title: "An evaluation of coastal dune forest restoration in northern KwaZulu-Natal, South Africa", "Test of the predictions of succession in a restoration context to ascertain the validity of succession-based management"  
+
+**MSc in Conservation and planning**, University of Pretoria, 2005
+Thesis Title: "Landscape heterogeneity and the use of space by elephants in the Kruger National Park, South Africa"
+
+**BSc (Hons) Zoology**, Newcastle University 1997
+
+
+# Current Role
+**Researcher I**, [Norwegian Institute for Nature Research (NINA)](https://www.nina.no/english), 2019-present  
+- I am an ecologist and researcher at the Norwegian Institute for Nature Research, specialising in biodiversity and wildlife management. With a strong foundation in quantitative methods, ecological modelling, and meta-analysis, I have contributed to a variety of studies aimed at understanding the impacts of land-use change, climate change, and conservation efforts on wildlife populations. Through rigorous evidence synthesis and systematic reviews, I work to ensure that ecological research translates into effective, data-driven decision-making for conservation and environmental policy. My research integrates cutting-edge methods and statistical techniques to forecast biodiversity outcomes and improve conservation strategies in a rapidly changing world. 
+
+# Selected Publications
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(glue)
+library(purrr)
+
+cvpublications <- function(tbl, title, year, authors, journal, doi) {
+  res <- pmap_chr(tbl, function(...) {
+    row <- list(...)
+    glue(
+      "- **{row[[title]]}** ({row[[year]]})  \n  _{row[[authors]]}_  \n  **{row[[journal]]}**  \n  [DOI](https://{row[[doi]]})"
+    )
+  })
+
+  knitr::asis_output(paste(res, collapse = "\n\n"))  # Ensures Quarto processes it as Markdown
+}
+tibble::tribble(
+    ~title, ~year, ~authors, ~journal,~doi,
+    "Citationchaser: A tool for transparent and efficient forward and backward citation chasing in systematic searching.", "2022", "Haddaway NR, Grainger MJ, Gray CT.",  "Res Syn Meth." ,"doi:10.1002/jrsm.1563",
+    "EviAtlas: a tool for visualising evidence synthesis databases.", "2019",
+    "Haddaway, N.R., Feierman, A., Grainger, M.J. et al.",  "Environ Evid", "doi.org/10.1186/s13750-019-0167-1",
+    "Evidence synthesis for tackling research waste.", "2020",
+    "Grainger, M.J., Bolam, F.C., Stewart, G.B. et al.",  "Nat Ecol Evol","doi.org/10.1038/s41559-020-1141-6",
+    "An imperfect vision of indivisibility in the Sustainable Development Goals", "2019","McGowan, P.J.K., Stewart, G.B., Long, G., Grainger, M.J.", "Nat Sustain","doi.org/10.1038/s41893-018-0190-1",
+   "Method Reporting with Initials for Transparency (MeRIT) promotes more granularity and accountability for author contributions", "2023",  "Nakagawa, S., Ivimey-Cook, E.R., Grainger, M.J. et al.",  "Nat Commun", "doi.org/10.1038/s41467-023-37039-1",
+   "Training future generations to deliver evidence-based conservation and ecosystem management", "2021", "Downey H Amano, M CadotteS, et al.",  "Ecol Solut Evidence", "doi.org/10.1002/2688-8319.12032", "Existing evidence on the use of participatory scenarios in ecological restoration: a systematic map", "2023", "Durrant, E., Howson, P., Puttick, B. et al.", "Environ Evid" ,"doi.org/10.1186/s13750-023-00314-1"
+   
+) |> cvpublications(year = "year", title = "title", authors = "authors", journal = "journal", doi = "doi")
+
+
+```
+
+# Leadership and Service Roles
+- **Co-lead**, [Evidence Synthesis Hackathon](www.eshackathon.org)
+- **Board Member**, [Collaboration for Environmental Evidence (CEE)](https://environmentalevidence.org/)
+- **Member**, Campbell's Systematic Reviews and EGMs Reviews Methodology Group
+- **Associate Editor**, Research Synthesis Methods
+- **Associate Editor (data and code)**, Ecology Letters 
+
